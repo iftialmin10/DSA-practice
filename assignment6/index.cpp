@@ -52,7 +52,7 @@ int main() {
     mt19937 gen(rd());
     uniform_int_distribution<> dis(1, 1000000);
     for (int i = 0; i < SIZE; i++) {
-        arr[i] = dis(gen);
+        arr[i] = i;
     }
 
     // Best case
