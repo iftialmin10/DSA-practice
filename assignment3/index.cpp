@@ -32,7 +32,7 @@ int main() {
     while (i * i <= n) {
         if (n % i == 0) {
             // ALAMIN TASK: write exactly two lines of code here to make this code work as the output image
-            //////line1
+            isPrime = false; //////line1
             //////line2
         }
         i++;
