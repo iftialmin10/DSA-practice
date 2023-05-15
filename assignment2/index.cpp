@@ -37,14 +37,14 @@ int main() {
    srand(time(0));
    int nValues[] = {10, 100, 1000, 10000};
    for (int i = 0; i < 4; i++) {
-      int n = nValues[i];
+       int n = nValues[i];
       int arr[n];
       for (int j = 0; j < n; j++) {
          arr[j] = rand() % 100;
       }
       auto start = chrono::steady_clock::now();
 
-      //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
+      selectionSort(arr , n); //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
 
 
       auto end = chrono::steady_clock::now();
