@@ -34,6 +34,7 @@ int main() {
             // ALAMIN TASK: write exactly two lines of code here to make this code work as the output image
             isPrime = false; //////line1
             //////line2
+            
         }
         i++;
     }
