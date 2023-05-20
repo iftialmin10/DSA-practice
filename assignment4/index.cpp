@@ -161,7 +161,7 @@ int main() {
     // Sort using Bubble Sort
     auto start1 = chrono::high_resolution_clock::now();
     //ALAMIN TASK: Write one line of code here to make the code work
-    //////////line1
+    bubbleSort(arr, n); //////////line1
     auto end1 = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed_seconds1 = end1 - start1;
     cout << "Time taken by Bubble Sort: " << elapsed_seconds1.count() << "s" << endl;
@@ -169,7 +169,7 @@ int main() {
     // Sort using Merge Sort
     auto start2 = chrono::high_resolution_clock::now();
     //ALAMIN TASK: Write one line of code here to make the code work
-    //////////line2
+    mergeSort(arr, 0, n-1); //////////line2
     auto end2 = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed_seconds2 = end2 - start2;
     cout << "Time taken by Merge Sort: " << elapsed_seconds2.count() << "s" << endl;
@@ -177,7 +177,7 @@ int main() {
     // Sort using Quick Sort
     auto start3 = chrono::high_resolution_clock::now();
     //ALAMIN TASK: Write one line of code here to make the code work
-    //////////line3
+    quickSort(arr, 0, n-1); //////////line3
     auto end3 = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed_seconds3 = end3 - start3;
     cout << "Time taken by Quick Sort: " << elapsed_seconds3.count() << "s" << endl;
