@@ -1,0 +1,10 @@
+git status
+git add .
+git commit -m " my commit message"
+git push origin master
+
+extra
+git pull origin master
+
+run code by cmd
+g++ index.cpp -o index

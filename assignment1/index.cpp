@@ -28,7 +28,7 @@ int max_value(int arr[], int size) {
     int max_val = arr[0];
     for (int i = 1; i < size; i++) {
         if (arr[i] > max_val) {
-            //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
+           max_val = arr[i]; //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
         }
     }
     return max_val;
