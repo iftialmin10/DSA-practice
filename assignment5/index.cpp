@@ -79,9 +79,11 @@ void quinticRuntime(int n) {
 int main() {
     int n = 100;
     //ALAMIN TASK: write three line of code here to make the code work
-    ////////line1
-    ////////line2
-    ////////line3
+    cubicRuntime(n); ////////line1
+
+    quarticRuntime(n); ////////line2
+
+    quinticRuntime(n); ////////line3
 
     return 0;
 }
