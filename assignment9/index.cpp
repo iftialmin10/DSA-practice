@@ -170,7 +170,3 @@ int main()
 
 	print("Result Array", result_matrix, 0, 0, ROW_1 - 1,COL_2 - 1);
 }
-
-// Time Complexity: T(N) = 7T(N/2) + O(N^2) => O(N^Log7)
-// which is approximately O(N^2.8074) Code Contributed By:
-// lucasletum
