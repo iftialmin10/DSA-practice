@@ -1,3 +1,33 @@
+/*
+The code you provided implements matrix multiplication using the Strassen's algorithm. It multiplies two matrices matrix_A and matrix_B
+and stores the result in result_matrix. The code also includes a helper function print to display the matrices.
+
+The Strassen's algorithm is a divide-and-conquer algorithm that reduces the number of recursive multiplications required for matrix
+multiplication. It divides the matrices into smaller submatrices and recursively multiplies them.
+
+Here's a brief overview of the code:
+
+The print function takes a display string, a matrix, and the start and end indices for rows and columns. It prints the matrix elements
+within the specified range.
+The add_matrix function adds two matrices by element-wise addition. It multiplies the elements of matrix_B by a multiplier (default is 1)
+before adding them to matrix_A.
+The multiply_matrix function performs matrix multiplication using the Strassen's algorithm. It first checks if the dimensions of the
+input matrices are compatible for multiplication. If not, it prints an error message and returns an empty matrix.
+Inside the multiply_matrix function, if the number of columns in matrix_A is 1, it performs a simple multiplication and stores the result
+in result_matrix. Otherwise, it splits the matrices into smaller submatrices and recursively multiplies them using Strassen's algorithm.
+The code defines submatrices a00, a01, a10, a11, b00, b01, b10, and b11 to store the submatrices of matrix_A and matrix_B.
+It defines submatrices p, q, r, s, t, u, and v to store intermediate results obtained by recursively multiplying the submatrices.
+Finally, it calculates the submatrices result_matrix_00, result_matrix_01, result_matrix_10, and result_matrix_11 using the intermediate
+results and combines them to form the final result_matrix.
+The main function initializes matrix_A and matrix_B with values and then calls the multiply_matrix function to obtain the result. It prints
+the input matrices and the resulting matrix using the print function.
+
+The time complexity of the Strassen's algorithm is approximately O(N^2.8074), which is better than the naive matrix multiplication
+algorithm with a time complexity of O(N^3).
+
+Note: The code assumes that the dimensions of matrix_A and matrix_B are compatible for multiplication, and both matrices have the same
+size (4x4 in this case).
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
