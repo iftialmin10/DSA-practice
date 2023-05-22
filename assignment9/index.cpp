@@ -1,5 +1,5 @@
 /*
-The code you provided implements matrix multiplication using the Strassen's algorithm. It multiplies two matrices matrix_A and matrix_B
+The code implements matrix multiplication using the Strassen's algorithm. It multiplies two matrices matrix_A and matrix_B
 and stores the result in result_matrix. The code also includes a helper function print to display the matrices.
 
 The Strassen's algorithm is a divide-and-conquer algorithm that reduces the number of recursive multiplications required for matrix
