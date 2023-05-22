@@ -58,7 +58,7 @@ int main() {
     // Best case
     auto start = high_resolution_clock::now();
     //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-    ///////////line1
+    insertionSort(arr, SIZE); ///////////line1
 
     auto end = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(end - start);
@@ -70,7 +70,7 @@ int main() {
     }
     start = high_resolution_clock::now();
     //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-    ///////////line2
+    insertionSort(arr, SIZE); ///////////line2
 
     end = high_resolution_clock::now();
     duration = duration_cast<microseconds>(end - start);
@@ -82,7 +82,7 @@ int main() {
     }
     start = high_resolution_clock::now();
     //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-    ///////////line3
+    insertionSort(arr, SIZE); ///////////line3
 
     end = high_resolution_clock::now();
     duration = duration_cast<microseconds>(end - start);
