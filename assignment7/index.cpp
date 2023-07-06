@@ -92,11 +92,11 @@ void mergeSort(int arr[], int l, int r) {
 
         // Recursively sort the left sub-array
         //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-        ////////LINE1
+        mergeSort(arr, l, m) ;////////LINE1
 
         // Recursively sort the right sub-array
         //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-        ////////LINE2
+        mergeSort(arr, m+1, r); ////////LINE2
 
         // Merge the sorted left and right sub-arrays
         merge(arr, l, m, r);
