@@ -1,3 +1,32 @@
+/*
+You are given a set of jobs, each with a specific deadline and associated profit. 
+The goal is to schedule the jobs in such a way that the total profit is maximized.
+
+Each job has an ID, a deadline (the latest time by which the job needs to be completed), 
+and a profit value. It is important to note that each job takes only one unit of time to complete.
+
+The objective is to find the sequence of jobs that maximizes the total profit while ensuring that 
+no job misses its deadline. In other words, you need to assign a time slot to each job, 
+making sure that the job is completed before or on its deadline, and the total profit is maximized.
+
+The task is to implement a program that takes the set of jobs as input and outputs the sequence 
+of jobs that results in the maximum profit.
+
+Example:
+Suppose we have the following jobs with their respective deadlines and profits:
+Job A: Deadline = 2, Profit = 100
+Job B: Deadline = 1, Profit = 19
+Job C: Deadline = 2, Profit = 27
+Job D: Deadline = 1, Profit = 25
+Job E: Deadline = 3, Profit = 15
+
+The program should output the maximum profit sequence of jobs, considering their deadlines. 
+In this case, the optimal sequence would be Job A, Job C, and Job E, resulting in a total profit of 142.
+
+Note: It is assumed that jobs cannot be executed simultaneously, and each job can be completed 
+within one unit of time.
+
+*/
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>

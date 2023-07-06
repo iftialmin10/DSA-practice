@@ -1,4 +1,18 @@
 /*
+Given a set of files with different sizes, the goal is to merge these files together while minimizing the 
+total amount of computation required. Each file has a certain size, and when two files are merged, the 
+computation cost is equal to the sum of their sizes. The task is to determine the minimum number of 
+computations needed to merge all the files.
+
+The code solves this problem by using a clever approach. It uses a priority queue (min heap) to keep 
+track of the file sizes. It repeatedly merges the two smallest files from the priority queue, updates 
+the computation count, and adds the merged file size back to the priority queue. This process continues
+until there is only one file left. Finally, the code returns the minimum number of computations required to merge all the files.
+
+In simpler terms, the code finds an efficient way to combine the files with the least computation effort, 
+ensuring that the total computation cost is minimized.
+
+
 The given code aims to find the minimum number of computations required to merge a set of files with different sizes.
 It utilizes a priority queue (min heap) to efficiently merge the files while minimizing the total computation cost.
 
