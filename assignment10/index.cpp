@@ -1,3 +1,13 @@
+/*
+The fractional knapsack problem is a problem in which we are given a set of items, 
+each with a weight and a corresponding profit. The goal is to select a combination 
+of items to maximize the total profit while considering the weight constraint of 
+a knapsack. In this problem, we are allowed to take fractions of items if needed, 
+meaning we can take a portion of an item to achieve the maximum profit. The task 
+is to determine the maximum achievable profit by selecting items optimally.
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
