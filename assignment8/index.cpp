@@ -62,7 +62,6 @@ void quickSort(int arr[], int low, int high) {
     if (low < high) {
         // Partition the array
         int pivot = partition(arr, low, high);
-
         // Recursively sort the two sub-arrays using two lines of code
         // They are responsible for sorting the sub-arrays on the left and right sides of the pivot element.
         // 1. The first line
@@ -78,8 +77,8 @@ void quickSort(int arr[], int low, int high) {
         // By making these recursive calls, the Quick Sort algorithm ensures that the sub-arrays are sorted individually. The process continues until the sub-arrays become empty or contain only one element, at which point the recursion stops. The algorithm then combines the sorted sub-arrays to obtain the final sorted array.
 
         //ALAMIN TASK: WRITE TWO LINES OF CODE HERE TO MAKE THE CODE WORK
-        //LINE1
-        //LINE2
+        quickSort(arr ,low, pivot-1); //LINE1
+        quickSort(arr , pivot+1, high);//LINE2
     }
 }
 
