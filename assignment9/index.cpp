@@ -166,7 +166,7 @@ int main()
 	print("Array B", matrix_B, 0, 0, ROW_2 - 1, COL_2 - 1);
 
 	//ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-	//LINE1
+	vector<vector<int> > result_matrix = multiply_matrix(matrix_A, matrix_B); //LINE1
 
 	print("Result Array", result_matrix, 0, 0, ROW_1 - 1,COL_2 - 1);
 }
