@@ -60,8 +60,8 @@ void primMST(int graph[V][V])
         for (int v = 0; v < V; v++)
             if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v]){
                 //ALAMIN TASK: WRITE TWO LINES OF CODE TO MAKE THE CODE WORK
-                //LINE
-                //LINE
+                parent[v] = u;//LINE
+                key[v] = graph[u][v];//LINE
             }
     }
 
