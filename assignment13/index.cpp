@@ -81,12 +81,12 @@ void HuffmanCoding(char characters[], int frequencies[], int size) {
         HuffmanNode* newNode = new HuffmanNode('$', left->frequency + right->frequency);
 
         //ALAMIN TASK: WRITE TWO LINES OF CODE TO MAKE THE CODE WORK
-        //LINE
-        //LINE
+        left = left; //LINE
+       right = right; //LINE
 
         // Add the new node back to the min heap
         //ALAMIN TASK: WRITE ONE LINE OF CODE TO MAKE THE CODE WORK
-        //LINE
+        minHeap.push(newNode); //LINE
     }
 
     // Print Huffman codes using the Huffman tree built above
