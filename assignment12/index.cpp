@@ -76,17 +76,17 @@ int findMinimumComputation(int numberOfFiles, int fileSizes[])
 
         // Compute the new combined file size
         //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-        //LINE1
+        int fileSizes = smallestSize1 + smallestSize2; //LINE1
 
 
         // Add the current computations with the previous ones
         //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-        //LINE1
+        totalComputations = totalComputations + fileSizes ;//LINE1
 
 
         // Push the new combined file size back into the min heap
         //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-        //LINE1
+        minHeap.push(fileSizes); //LINE1
 
     }
 
