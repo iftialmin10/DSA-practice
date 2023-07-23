@@ -63,9 +63,9 @@ void printJobScheduling(Job jobs[], int numJobs)
         for (int j = getMinimum(numJobs, jobs[i].deadline) - 1; j >= 0; j--) {
             if (timeSlotAvailable[j] == false) {
                 //ALAMIM TASK: WRITE TWO LINES OF CODE TO MAKE THE CODE WORK
-                //LINE 1
-
-                //LINE 2
+                jobSequence[j] = i; //LINE 1
+ 
+                timeSlotAvailable[j] = true;  //LINE 2
 
                 break;
             }
