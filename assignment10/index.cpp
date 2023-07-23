@@ -37,15 +37,14 @@ double fractionalKnapsack(int knapsackCapacity, struct Item items[], int numItem
     for (int i = 0; i < numItems; i++) {
         if (items[i].weight <= knapsackCapacity) {
             //ALAMIN TASK: WRITE TWO LINES OF CODE HERE TO MAKE THE CODE WORK
-            //LINE1
+            knapsackCapacity = knapsackCapacity - items[i].weight ;//LINE1
 
-            //LINE2
+            totalProfit = totalProfit + items[i].profit ;//LINE2
 
         }
         else {
             //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-            //LINE1
-
+            totalProfit = totalProfit + items[i].profit * knapsackCapacity / items[i].weight;//LINE1
             break;
         }
     }
