@@ -105,8 +105,8 @@ public:
                 */
 
                 //ALAMIN TASK:  WRITE TWO LINES OF CODE TO MAKE THE CODE WORK
-                //LINE
-                //LINE
+                dsu.unite(vertex1 , vertex2);//LINE
+                totalWeight = totalWeight + weight; //LINE
 
 
                 cout << vertex1 << " -- " << vertex2 << " == " << weight << endl;
