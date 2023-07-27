@@ -19,6 +19,7 @@ the source node to every other node in the graph with non-negative edge weights.
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <climits>
 
 using namespace std;
 
@@ -72,8 +73,8 @@ vector<int> dijkstra(vector<vector<pair<int, int>>>& graph, int start) {
             // If the new distance is smaller, update the distance and push the neighbor to the priority queue
             if (newDistance < distance[neighborNode]) {
                 //ALAMIN TASK: WRITE TWO LINES OF CODE HERE TO MAKE THE CODE WORK
-                //LINE ONE
-                //LINE TWO
+                currDistance = newDistance; //LINE ONE
+                pq.push(Node(currNode, currDistance));//LINE TWO
             }
         }
     }
