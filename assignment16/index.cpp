@@ -73,8 +73,8 @@ vector<int> dijkstra(vector<vector<pair<int, int>>>& graph, int start) {
             // If the new distance is smaller, update the distance and push the neighbor to the priority queue
             if (newDistance < distance[neighborNode]) {
                 //ALAMIN TASK: WRITE TWO LINES OF CODE HERE TO MAKE THE CODE WORK
-                currDistance = newDistance; //LINE ONE
-                pq.push(Node(currNode, currDistance));//LINE TWO
+                distance[neighborNode] = newDistance; //LINE ONE
+                pq.push(Node(neighborNode, distance[neighborNode]));//LINE TWO
             }
         }
     }
