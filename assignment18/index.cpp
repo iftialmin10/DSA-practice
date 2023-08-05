@@ -50,7 +50,7 @@ long matrixChainMultiplication(int dimensions[], int n) {
             // Try all possible combinations to find the minimum
             for (int k = i; k <= j - 1; k++) {
                 //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-                //LINE 1
+                int cost = dp[i][k] + dp[k+1] [j] + dimensions[i-1] * dimensions[k] * dimensions[j];//LINE 1
 
                 if (cost < dp[i][j]) {
                     dp[i][j] = cost;
