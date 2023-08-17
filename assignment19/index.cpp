@@ -35,7 +35,7 @@ void bellmanFord(std::vector<Edge>& graph, int V, int source) {
             // Relax the edge if a shorter path is found
             if (distance[u] != INT_MAX && distance[u] + weight < distance[v])
                 //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-                //LINE 1
+                 distance[v] = distance[u] + weight;//LINE 1
         }
     }
 
