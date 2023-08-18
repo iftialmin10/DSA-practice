@@ -29,7 +29,7 @@ int knapsack(int capacity, const vector<int>& weights, const vector<int>& values
             if (weights[i - 1] <= w) {
                 // Calculate the maximum value that can be obtained by including or excluding the current item
                 //ALAMIN TASK: WRITE ONE LINE OF CODE HERE TO MAKE THE CODE WORK
-                // LINE 1
+                dp[i][w] = max(values[i-1] + dp[i-1][w-weights[i - 1]], dp[i-1][w]); // LINE 1
             }
             else {
                 // If the current item's weight is greater than the current capacity,
